@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "350681666491",
+    "project_id": "mynotes-lts",
+    "storage_bucket": "mynotes-lts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350681666491:android:e5139201ae2a6c2a20ea9e",
+        "android_client_info": {
+          "package_name": "com.learning.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350681666491-phreln4sgsgbg3khh2didtbmb06klcej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_mDGfKiUkerr38PcyJd8JsciQSQ0RC_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350681666491-phreln4sgsgbg3khh2didtbmb06klcej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
