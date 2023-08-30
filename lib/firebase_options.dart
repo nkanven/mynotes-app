@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:mynotes/constants/.env.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -43,40 +44,40 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static final FirebaseOptions web = FirebaseOptions (
-    apiKey: dotenv.env['webApiKey'] ?? "webApiKey not found",
-    appId: dotenv.env['WebAppId'] ?? "WebAppId not found",
-    messagingSenderId: dotenv.env['messagingSenderId'] ?? "messagingSenderId not found",
-    projectId: dotenv.env['projectId'] ?? "projectId not found",
-    authDomain: dotenv.env['authDomain'] ?? "authDomain not found",
-    storageBucket: dotenv.env['storageBucket'] ?? "storageBucket not found",
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: webApiKey,
+    appId: WebAppId,
+    messagingSenderId: messagingSenderId,
+    projectId: projectId,
+    authDomain: authDomain,
+    storageBucket: storageBucket,
   );
 
-  static final FirebaseOptions android = FirebaseOptions(
-    apiKey: dotenv.env['androidApiKey'] ?? "androidApiKey not found",
-    appId: dotenv.env['androidAppId'] ?? "androidAppId not found",
-    messagingSenderId: dotenv.env['messagingSenderId'] ?? "messagingSenderId not found",
-    projectId: dotenv.env['projectId'] ?? "projectId not found",
-    storageBucket: dotenv.env['storageBucket'] ?? "storageBucket not found",
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: androidApiKey,
+    appId: androidAppId,
+    messagingSenderId: messagingSenderId,
+    projectId: projectId,
+    storageBucket: storageBucket,
   );
 
-  static final FirebaseOptions ios = FirebaseOptions(
-    apiKey: dotenv.env['osApiKey'] ?? "osApiKey not found",
-    appId: dotenv.env['iosAppId'] ?? "iosAppId not found",
-    messagingSenderId: dotenv.env['messagingSenderId'] ?? "messagingSenderId not found",
-    projectId: dotenv.env['projectId'] ?? "projectId not found",
-    storageBucket: dotenv.env['storageBucket'] ?? "storageBucket not found",
-    iosClientId: dotenv.env['iosClientId'] ?? "iosClientId not found",
-    iosBundleId: dotenv.env['iosBundleId'] ?? "iosBundleId not found",
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: iosApiKey,
+    appId: iosAppId,
+    messagingSenderId: messagingSenderId,
+    projectId: projectId,
+    storageBucket: storageBucket,
+    iosClientId: iosClientId,
+    iosBundleId: iosBundleId,
   );
 
-  static final FirebaseOptions macos = FirebaseOptions(
-    apiKey: dotenv.env['iosBundleId'] ?? "macosApiKey not found",
-    appId: dotenv.env['macosAppId'] ?? "macosAppId not found",
-    messagingSenderId: dotenv.env['iosBundleId'] ?? "iosBundleId not found",
-    projectId: dotenv.env['projectId'] ?? "projectId not found",
-    storageBucket: dotenv.env['storageBucket'] ?? "storageBucket not found",
-    iosClientId: dotenv.env['iosClientId'] ?? "iosClientId not found",
-    iosBundleId: dotenv.env['iosBundleId'] ?? "iosBundleId not found",
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: macosApiKey,
+    appId: macosAppId,
+    messagingSenderId: messagingSenderId,
+    projectId: projectId,
+    storageBucket: storageBucket,
+    iosClientId: macosClientId,
+    iosBundleId: macosBundleId,
   );
 }
